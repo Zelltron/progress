@@ -82,6 +82,18 @@ class Circle extends Component {
           ref={(path) => { this.path = path; }}
           style={strokePathStyle}
         />
+        <defs>
+          <linearGradient id="gradient-circle-progress">
+            <stop
+              offset="5%"
+              stopColor="#F60"
+            />
+            <stop
+              offset="95%"
+              stopColor="#FF6"
+            />
+          </linearGradient>
+        </defs>
       </svg>
     );
   }
